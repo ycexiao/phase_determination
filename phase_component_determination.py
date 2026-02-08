@@ -201,10 +201,3 @@ def error_visualization(results, title=None):
         ax.set_title(title)
     plt.colorbar(im)
     plt.show()
-
-
-if __name__ == "__main__":
-    target_pdf = [i for i in range(10)]
-    target_region = [[target_pdf for i in range(100)] for j in range(100)]
-    target_region = numpy.array(target_region)
-    print(target_region.mean(axis=0).mean(axis=0))
